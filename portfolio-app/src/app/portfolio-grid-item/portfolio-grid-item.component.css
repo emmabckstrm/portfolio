@@ -1,0 +1,11 @@
+.portfolio-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin: 0 1.6% 30px;
+	background: lightblue;
+}
+.portfolio-item img {
+	display: block;
+	width: 100%;
+}

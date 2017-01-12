@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioItemService } from "../portfolio-item.service";
+import { PortfolioItem } from "../portfolio-item";
 
 @Component({
   selector: 'app-portfolio-grid',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioGridComponent implements OnInit {
 
-  constructor() { }
+	public portfolioItems: PortfolioItem[];
+
+  constructor() { 
+  	this.portfolioItems = new PortfolioItemService().getAllItems();
+  }
 
   ngOnInit() {
+  	console.log(this);
   }
 
 }
