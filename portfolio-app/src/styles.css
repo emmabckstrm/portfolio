@@ -12,6 +12,11 @@ body, html {
 	margin: 0 5%;
 }
 
+section {
+	display: block;
+	padding: 70px 0;
+}
+
 h2.header {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 4.5em;
