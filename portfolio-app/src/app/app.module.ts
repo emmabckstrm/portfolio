@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { PortfolioGridComponent } from './portfolio-grid/portfolio-grid.component';
 import { PortfolioGridItemComponent } from './portfolio-grid-item/portfolio-grid-item.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AboutSectionComponent } from './about-section/about-section.component';
     HeaderComponent,
     PortfolioGridComponent,
     PortfolioGridItemComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
