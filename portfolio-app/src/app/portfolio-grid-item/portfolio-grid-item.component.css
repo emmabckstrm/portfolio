@@ -16,6 +16,11 @@
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 }
+.portfolio-img { 
+	background: pink;
+	width: 100%; 
+	overflow:hidden;
+}
 
 .portfolio-overlay {
 	position: absolute;
