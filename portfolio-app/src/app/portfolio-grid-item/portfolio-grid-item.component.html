@@ -1,4 +1,11 @@
 <div class="portfolio-item">
+	<div class="portfolio-overlay">
+		<div class="overlay-content">
+			<h4 [innerText]="item.name" class="text-center"></h4>
+			<p>
+				<span [innerText]="item.role"></span> | <span [innerText]="item.description"></span>
+			</p>
+		</div>
+	</div>
 	<img [src]="item.img"/>
-	<p [innerText]="item.name"></p>
 </div>

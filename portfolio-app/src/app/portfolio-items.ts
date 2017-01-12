@@ -2,18 +2,24 @@ import {PortfolioItem} from './portfolio-item';
 
 export const PortfolioItems: PortfolioItem[] = <PortfolioItem[]>[
 	{
-		name: "Test1",
+		name: "Project A",
 		url: "#",
+		role: "Fronted developer",
+		description: "Lorem ipsum petentium efficiantur te eum",
 		img: "../assets/img/1.png"
 	},
 	{
-		name: "Test2",
+		name: "Project B",
 		url: "#",
+		role: "Fronted developer",
+		description: "Lorem ipsum petentium efficiantur te eum",
 		img: "../assets/img/2.png"
 	},
 	{
-		name: "Test3",
+		name: "Project C",
 		url: "#",
+		role: "Fronted developer",
+		description: "Lorem ipsum petentium efficiantur te eum",
 		img: "../assets/img/1.png"
 	}
 ];
