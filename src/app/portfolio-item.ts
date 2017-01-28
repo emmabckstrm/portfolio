@@ -1,8 +1,9 @@
 export interface PortfolioItem {
-	name: string,
+	title: string,
 	role: string,
 	members: string,
 	description: string,
 	url: string,
-	img: string
+	img: string,
+	tags: string
 }

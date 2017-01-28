@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MasonryModule } from 'angular2-masonry';
 
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MasonryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

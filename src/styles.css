@@ -9,6 +9,10 @@ body, html {
 	font-family: 'Roboto', sans-serif;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .content-container {
 	width: 90%;
 	margin: 0 5%;

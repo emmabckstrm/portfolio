@@ -15,7 +15,27 @@ export class GridComponent implements OnInit {
   	this.portfolioItems = new PortfolioItemsService().getAllItems();
   }
 
+  filter1() {
+    this.portfolioItems = new PortfolioItemsService().getItemsFilter1()
+  }
+
+  showAll() {
+    this.portfolioItems = new PortfolioItemsService().getAllItems();
+  }
+
+  
+  masonryOptions = {
+		transitionDuration: '0.8s',
+		itemSelector: '.article-grid-item',
+		columnWidth: '.article-grid-sizer',
+		percentPosition: true
+    };
+
+
+
+
   ngOnInit() {
   }
+
 
 }
