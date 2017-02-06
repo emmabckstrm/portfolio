@@ -1,10 +1,12 @@
+@import "./src/utility";
+
 .portfolio-item {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 30%;
 	margin: 0 1.6% 30px;
-	transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s $easing;
 }
 .portfolio-item img {
 	display: block;
