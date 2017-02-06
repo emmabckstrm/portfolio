@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Muli|Permanent+Marker|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
+@import "utility";
+
+$primary-accent-color: #23A581;
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden; 
+	background: $primary-bg-color;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.content-container {
+	width: 90%;
+	margin: 0 5%;
+}
+/*
+section {
+	display: block;
+	padding: 70px 0;
+}*/
+
+h2.header {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 4.5em;
+	margin-bottom: 30px;
+}
+
+.aspect-ratio{
+	position: relative;
+	width: 50%;		/* desired width */
+}
+.aspect-ratio:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+.aspect-ratio-content{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.is-white {
+	background-color: white;
+	background: white;
+}
+
+/* Aspect ratios */
+.ratio2-1:before{
+	padding-top: 50%;
+}
+.ratio1-2:before{
+	padding-top: 200%;
+}
+.ratio4-3:before{
+	padding-top: 75%;
+}
+.ratio16-9:before{
+	padding-top: 56.25%;
+}
+
+
+/*
+*	SPINNER ============================================
+*/
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: $primary-accent-color;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
