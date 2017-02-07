@@ -2,14 +2,12 @@
 	<div class="portfolio-overlay">
 		<div class="overlay-content">
 			<h4 [innerText]="item.title" class="text-center"></h4>
-			<p>
-				<span [innerText]="item.role"></span> | <span [innerText]="item.description"></span>
-			</p>
+			<p [innerText]="item.role"></p>
 		</div>
 	</div>
 	<div class="aspect-ratio ratio16-9 portfolio-img">
-		<div class="aspect-ratio-content">
-			<img [src]="item.img"/>
+		<div class="aspect-ratio-content portfolio-img-content" [ngStyle]="{'background-image': 'url(' + item.img + ')'}" >
+			<!--<img [src]="item.img"/>-->
 		</div>
 	</div>
 </div>

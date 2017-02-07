@@ -1,5 +1,7 @@
 @import "./src/utility";
 
+$transition: all 0.2s $easing;
+
 .portfolio-item {
 	position: relative;
 	display: inline-block;
@@ -13,15 +15,20 @@
 	width: 100%;
 }
 .portfolio-item h4 {
+	font-size: 1.1em;
 	font-weight: 300;
-	border-bottom: 1px solid #fff;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+}
+.portfolio-item p {
+	font-size: 0.85em;
+	text-transform: uppercase;
 }
 .portfolio-img { 
-	background: pink;
 	width: 100%; 
 	overflow:hidden;
+}
+.portfolio-img-content {
+	background-size: cover;
+	transition: $transition;
 }
 .portfolio-overlay {
 	position: absolute;
@@ -30,17 +37,38 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 50;
+	z-index: 5;
 	opacity: 0;
-	background: rgba(104,163,148,0.9);
+	text-align: center;
+}
+.portfolio-overlay:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
 }
 .overlay-content {
+	display: inline-block;
+	vertical-align: middle;
 	width: 80%;
-	margin: 30px 10% 0;
+	margin: 0px 10%;
+	transform: translateY(50px);
+	transition: $transition;
 }
 .portfolio-item:hover { transform: scale(1.05, 1.05); }
 .portfolio-item:hover .portfolio-overlay {
 	opacity: 1;
+	transition: $transition;
+}
+.portfolio-item:hover .portfolio-img-content {
+	background-color: rgba(104,163,148,1);
+	background-blend-mode: multiply;
+	transition: $transition;
+}
+.portfolio-item:hover .overlay-content {
+	transform: translateY(0px);
+	transition: $transition;
 }
 .portfolio-overlay, .portfolio-item:hover .portfolio-overlay {
 	transition-duration: 0.4s;
