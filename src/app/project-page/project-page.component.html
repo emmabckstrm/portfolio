@@ -1,7 +1,23 @@
-<p>
-  project-page works!
+<section class="hero is-primary is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title" *ngIf="portfolioItem">
+        {{portfolioItem.title}}
+      </h1>
+      <h2 class="subtitle" *ngIf="portfolioItem">
+        {{portfolioItem.role}}
+      </h2>
+    </div>
+  </div>
 
-</p>
-<div *ngIf="portfolioItem">
-	<p>{{portfolioItem.title}}</p>
+</section>
+<div class="content-container">
+	<div class="columns">
+		<div class="column is-one-third">
+			<img *ngIf="portfolioItem" [src]="portfolioItem.img"/>
+		</div>
+		<div class="column">
+			<p *ngIf="portfolioItem" [innerText]="portfolioItem.description"></p>
+		</div>
+	</div>
 </div>

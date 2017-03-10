@@ -7,8 +7,8 @@ export const PortfolioItems: PortfolioItem[] = [
 		img: "assets/img/1.png",
 		role: "Fronted developer",
 		title: "Project A",
-		tags: "test1"
-		url: "#",
+		tags: "test1",
+		url: "#"
 	},
 	{
 		description: "Lorem ipsum petentium efficiantur te eum",
@@ -16,8 +16,8 @@ export const PortfolioItems: PortfolioItem[] = [
 		img: "assets/img/2.png",
 		role: "Fronted developer",
 		title: "Project B",
-		tags: "test1"
-		url: "#",
+		tags: "test1",
+		url: "#"
 	},
 	{
 		description: "Lorem ipsum petentium efficiantur te eum",
@@ -25,8 +25,8 @@ export const PortfolioItems: PortfolioItem[] = [
 		img: "assets/img/1.png",
 		role: "Fronted developer",
 		title: "Project C",
-		tags: "test1"
-		url: "#",
+		tags: "test1",
+		url: "#"
 	},
 	{
 		description: "Lorem ipsum petentium efficiantur te eum",
@@ -34,8 +34,8 @@ export const PortfolioItems: PortfolioItem[] = [
 		img: "assets/img/2.png",
 		role: "Fronted developer",
 		title: "Project D",
-		tags: "test1"
-		url: "#",
+		tags: "test1",
+		url: "#"
 	},
 	{
 		description: "Lorem ipsum petentium efficiantur te eum",
@@ -43,8 +43,8 @@ export const PortfolioItems: PortfolioItem[] = [
 		img: "assets/img/1.png",
 		role: "Fronted developer",
 		title: "Project E",
-		tags: "test1"
-		url: "#",
+		tags: "test1",
+		url: "#"
 	},
 	{
 		description: "Lorem ipsum petentium efficiantur te eum",
@@ -52,7 +52,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		img: "assets/img/2.png",
 		role: "Fronted developer",
 		title: "Project F",
-		tags: "test1"
-		url: "#",
+		tags: "test1",
+		url: "#"
 	}
 ];

@@ -9,6 +9,8 @@ $transition: all 0.2s $easing;
 	width: 30%;
 	margin: 0 1.6% 30px;
 	transition: transform 0.2s $easing;
+
+	a, a:hover { color: #fff; }
 }
 .portfolio-item img {
 	display: block;
