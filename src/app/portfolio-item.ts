@@ -1,9 +1,10 @@
-export interface PortfolioItem {
-	title: string,
-	role: string,
-	members: string,
-	description: string,
-	url: string,
-	img: string,
-	tags: string
+export class PortfolioItem {
+	description: string;
+	id: number;
+	img: string;
+	members?: string;
+	role: string;
+	tags: string;
+	title: string;
+	url: string;
 }

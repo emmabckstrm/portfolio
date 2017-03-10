@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioItemsService } from "../portfolio-items.service";
 
 @Component({
   selector: 'app-home',

@@ -15,10 +15,15 @@ import { NavComponent } from './nav/nav.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
+
+import { PortfolioItemsService } from './portfolio-items.service';
 
 const appRoutes: Routes = [
   { path: 'admin', component: AdminComponent },
-  //{ path: 'item/:id',      component: HeroDetailComponent },
+  { path: 'project/:id',
+    component: ProjectPageComponent 
+  },
   {
     path: 'home',
     component: HomeComponent,
@@ -43,7 +48,8 @@ const appRoutes: Routes = [
     NavComponent,
     AdminComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,7 @@ const appRoutes: Routes = [
     MasonryModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [PortfolioItemsService],
   bootstrap: [AppComponent]
 })
 

@@ -1,52 +1,58 @@
 import {PortfolioItem} from './portfolio-item';
 
-export const PortfolioItems: PortfolioItem[] = <PortfolioItem[]>[
+export const PortfolioItems: PortfolioItem[] = [
 	{
+		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 1,
+		img: "assets/img/1.png",
+		role: "Fronted developer",
 		title: "Project A",
-		url: "#",
-		role: "Fronted developer",
-		description: "Lorem ipsum petentium efficiantur te eum",
-		img: "assets/img/1.png",
 		tags: "test1"
+		url: "#",
 	},
 	{
+		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 2,
+		img: "assets/img/2.png",
+		role: "Fronted developer",
 		title: "Project B",
-		url: "#",
-		role: "Fronted developer",
-		description: "Lorem ipsum petentium efficiantur te eum",
-		img: "assets/img/2.png",
-		tags: "test2"
-	},
-	{
-		title: "Project C",
-		url: "#",
-		role: "Fronted developer",
-		description: "Lorem ipsum petentium efficiantur te eum",
-		img: "assets/img/1.png",
-		tags: "test3"
-	},
-	{
-		title: "Project D",
-		url: "#",
-		role: "Fronted developer",
-		description: "Lorem ipsum petentium efficiantur te eum",
-		img: "assets/img/2.png",
-		tags: "test2"
-	},
-	{
-		title: "Project E",
-		url: "#",
-		role: "Fronted developer",
-		description: "Lorem ipsum petentium efficiantur te eum",
-		img: "assets/img/1.png",
-		tags: "test3"
-	},
-	{
-		title: "Project F",
-		url: "#",
-		role: "Fronted developer",
-		description: "Lorem ipsum petentium efficiantur te eum",
-		img: "assets/img/2.png",
 		tags: "test1"
+		url: "#",
+	},
+	{
+		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 3,
+		img: "assets/img/1.png",
+		role: "Fronted developer",
+		title: "Project C",
+		tags: "test1"
+		url: "#",
+	},
+	{
+		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 4,
+		img: "assets/img/2.png",
+		role: "Fronted developer",
+		title: "Project D",
+		tags: "test1"
+		url: "#",
+	},
+	{
+		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 5,
+		img: "assets/img/1.png",
+		role: "Fronted developer",
+		title: "Project E",
+		tags: "test1"
+		url: "#",
+	},
+	{
+		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 6,
+		img: "assets/img/2.png",
+		role: "Fronted developer",
+		title: "Project F",
+		tags: "test1"
+		url: "#",
 	}
 ];
