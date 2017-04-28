@@ -1,10 +1,14 @@
 export class PortfolioItem {
+	course?: string;
+	date?: string;
 	description: string;
 	id: number;
 	img: string;
-	members?: string;
+	project?: string;
 	role: string;
-	tags: string;
+	tags?: string;
+	team?: string;
 	title: string;
-	url: string;
+	tools: string;
+	url?: string;
 }

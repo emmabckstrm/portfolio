@@ -25,12 +25,12 @@ const appRoutes: Routes = [
     component: ProjectPageComponent 
   },
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
     data: { title: 'Home' }
   },
-  { path: '',
-    redirectTo: '/home',
+  { path: 'h',
+    redirectTo: '/',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }

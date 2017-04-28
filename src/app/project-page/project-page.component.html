@@ -1,23 +1,44 @@
 <section class="hero is-primary is-medium">
   <div class="hero-body">
     <div class="container">
+      <!--<img *ngIf="portfolioItem" [src]="portfolioItem.img"/>
+      <h1 class="title" *ngIf="portfolioItem">
+        {{portfolioItem.title}}
+      </h1>-->
       <h1 class="title" *ngIf="portfolioItem">
         {{portfolioItem.title}}
       </h1>
-      <h2 class="subtitle" *ngIf="portfolioItem">
-        {{portfolioItem.role}}
-      </h2>
+      <p class="subtitle">
+        Role // <span *ngIf="portfolioItem">{{portfolioItem.role}}</span>
+      </p>
+      <p class="subtitle" *ngIf="portfolioItem">
+        <span *ngIf="portfolioItem.tools">Tools // {{portfolioItem.tools}}</span>
+      </p>
+      <p class="subtitle" *ngIf="portfolioItem">
+        <span *ngIf="portfolioItem.team">Team // {{portfolioItem.team}}</span>
+      </p>
+      <p class="subtitle" *ngIf="portfolioItem">
+        <span *ngIf="portfolioItem.url">Link // {{portfolioItem.url}}</span>
+      </p>
     </div>
   </div>
-
 </section>
+
 <div class="content-container">
 	<div class="columns">
-		<div class="column is-one-third">
-			<img *ngIf="portfolioItem" [src]="portfolioItem.img"/>
-		</div>
-		<div class="column">
+		<div class="column is-10 is-offset-1">
+      <h1 class="title" *ngIf="portfolioItem">
+        {{portfolioItem.title}}
+      </h1>
+      
 			<p *ngIf="portfolioItem" [innerText]="portfolioItem.description"></p>
+      <p></p>
+      <h4>Tools used</h4>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
 		</div>
 	</div>
 </div>
