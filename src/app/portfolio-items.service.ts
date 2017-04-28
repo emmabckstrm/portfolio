@@ -7,9 +7,15 @@ export class PortfolioItemsService {
 
   constructor() { }
 
-  public getAllItems(){
-  	//console.log(PortfolioItems);
-  	return PortfolioItems;
+  getAllItems(): Promise<PortfolioItem[]>{
+  	return Promise.resolve(PortfolioItems);
+  }
+
+  getPortfolioItem(id: number): Promise<PortfolioItem> {
+    return this.getAllItems()
+      .then(
+        portfolioItems => portfolioItems.find(portfolioItem => portfolioItem.id === id)
+      )
   }
 
   filterItems1 = [];

@@ -1,52 +1,82 @@
 import {PortfolioItem} from './portfolio-item';
 
-export const PortfolioItems: PortfolioItem[] = <PortfolioItem[]>[
+export const PortfolioItems: PortfolioItem[] = [
 	{
-		title: "Project A",
-		url: "#",
-		role: "Fronted developer",
+		course: "DH2321 Information Visualization",
 		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 6,
 		img: "assets/img/1.png",
-		tags: "test1"
+		project: "",
+		role: "Fronted & backend developer",
+		tags: "test1",
+		team: "Caroline Lönn, Hannes Westberg, Johanna Gustafsson, Maria Westling, Per Jaakonantti, Simóne Stenis Perron, Thomas von Prouss",
+		title: "Le Bon Nobel",
+		tools: "",
+		url: "https://lebonnobel.github.io/"
 	},
 	{
-		title: "Project B",
-		url: "#",
-		role: "Fronted developer",
+		course: "",
 		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 5,
 		img: "assets/img/2.png",
-		tags: "test2"
+		project: "",
+		role: "Fronted developer",
+		tags: "test1",
+		team: "Ah Zau Marang, Simóne Stenis Perron, Tedy Warsitha, Thomas Vakili",
+		title: "Osqledaren",
+		tools: "Angular2, HTML, CSS",
+		url: ""
 	},
 	{
-		title: "Project C",
-		url: "#",
-		role: "Fronted developer",
+		course: "",
 		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 4,
 		img: "assets/img/1.png",
-		tags: "test3"
+		project: "",
+		role: "Developer",
+		tags: "test1",
+		team: "",
+		title: "GhostHuntAR",
+		tools: "",
+		url: ""
 	},
 	{
-		title: "Project D",
-		url: "#",
-		role: "Fronted developer",
+		course: "",
 		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 3,
 		img: "assets/img/2.png",
-		tags: "test2"
+		project: "",
+		role: "Fronted developer",
+		tags: "test1",
+		team: "",
+		title: "EggHunt",
+		tools: "",
+		url: ""
 	},
 	{
-		title: "Project E",
-		url: "#",
-		role: "Fronted developer",
+		course: "",
 		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 2,
 		img: "assets/img/1.png",
-		tags: "test3"
+		project: "",
+		role: "UX designer & Fronted developer",
+		tags: "test1",
+		team: "",
+		title: "mtgn2015",
+		tools: "",
+		url: ""
 	},
 	{
-		title: "Project F",
-		url: "#",
-		role: "Fronted developer",
+		course: "",
 		description: "Lorem ipsum petentium efficiantur te eum",
+		id: 1,
 		img: "assets/img/2.png",
-		tags: "test1"
+		project: "",
+		role: "UX designer & Fronted developer",
+		tags: "test1",
+		team: "",
+		title: "Riverbell themes",
+		tools: "",
+		url: ""
 	}
 ];

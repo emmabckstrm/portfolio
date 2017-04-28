@@ -18,17 +18,23 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LeftSideComponent } from './left-side/left-side.component';
 import { RightSideComponent } from './right-side/right-side.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
+//Services
+import { PortfolioItemsService } from './portfolio-items.service';
+
 
 const appRoutes: Routes = [
   { path: 'admin', component: AdminComponent },
-  //{ path: 'item/:id',      component: HeroDetailComponent },
+  { path: 'project/:id',
+    component: ProjectPageComponent 
+  },
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
     data: { title: 'Home' }
   },
-  { path: '',
-    redirectTo: '/home',
+  { path: 'h',
+    redirectTo: '/',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent }
@@ -49,7 +55,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     LeftSideComponent,
     RightSideComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +65,7 @@ const appRoutes: Routes = [
     MasonryModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [PortfolioItemsService],
   bootstrap: [AppComponent]
 })
 

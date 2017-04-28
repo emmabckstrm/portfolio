@@ -1,27 +1,30 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { PortfolioItemsService } from "../portfolio-items.service";
 import { PortfolioItem } from "../portfolio-item";
 
 @Component({
+  moduleId: module.id,
   selector: 'app-grid',
   templateUrl: './grid.component.html',
-  styleUrls: ['./grid.component.css']
+  styleUrls: ['./grid.component.scss']
 })
 export class GridComponent implements OnInit {
 
   public portfolioItems: PortfolioItem[];
 
-  constructor() { 
-  	this.portfolioItems = new PortfolioItemsService().getAllItems();
+  constructor(
+      private router: Router,
+      private portfolioService: PortfolioItemsService
+    ) { 
+  	//this.portfolioItems = new PortfolioItemsService().getAllItems();
   }
 
-  filter1() {
-    this.portfolioItems = new PortfolioItemsService().getItemsFilter1()
+  getPortfolio() {
+    this.portfolioService.getAllItems().then(portfolioItems => this.portfolioItems = portfolioItems);
   }
 
-  showAll() {
-    this.portfolioItems = new PortfolioItemsService().getAllItems();
-  }
 
   
   masonryOptions = {
@@ -35,6 +38,7 @@ export class GridComponent implements OnInit {
 
 
   ngOnInit() {
+    this.getPortfolio()
   }
 
 
