@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Muli|Permanent+Marker|Roboto');
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700');
+
 @import "utility";
 
 $primary-accent-color: #23A581;
@@ -22,17 +21,6 @@ body, html {
 .content-container {
 	width: 90%;
 	margin: 0 5%;
-}
-/*
-section {
-	display: block;
-	padding: 70px 0;
-}*/
-
-h2.header {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 4.5em;
-	margin-bottom: 30px;
 }
 
 .aspect-ratio{

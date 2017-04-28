@@ -15,6 +15,9 @@ import { NavComponent } from './nav/nav.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LeftSideComponent } from './left-side/left-side.component';
+import { RightSideComponent } from './right-side/right-side.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const appRoutes: Routes = [
   { path: 'admin', component: AdminComponent },
@@ -43,7 +46,10 @@ const appRoutes: Routes = [
     NavComponent,
     AdminComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LeftSideComponent,
+    RightSideComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

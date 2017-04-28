@@ -1,8 +1,26 @@
 @import './src/utility';
 
 nav.nav {
-	/*position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;*/
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 5;
 }
+
+nav .logo {
+	font-family: 'Courier';
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: -2px;
+	padding: 0.5em 0.6em;
+    padding-left: 1em;
+    background: none;
+}
+nav a, nav a:visited {
+	color: #fff;
+	text-decoration: none;
+} /*
+nav a:hover .logo {
+	background: #fff;
+	color: $green;
+}*/
