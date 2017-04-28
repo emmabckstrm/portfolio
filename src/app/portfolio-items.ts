@@ -23,7 +23,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		role: "Fronted developer",
 		tags: "test1",
 		team: "Ah Zau Marang, Simóne Stenis Perron, Tedy Warsitha, Thomas Vakili",
-		title: "Osqledaren",
+		title: "Osq&shy;ledaren",
 		tools: "Angular2, HTML, CSS",
 		url: ""
 	},
@@ -36,7 +36,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		role: "Developer",
 		tags: "test1",
 		team: "",
-		title: "GhostHuntAR",
+		title: "Ghost&shy;HuntAR",
 		tools: "",
 		url: ""
 	},
@@ -62,7 +62,7 @@ export const PortfolioItems: PortfolioItem[] = [
 		role: "UX designer & Fronted developer",
 		tags: "test1",
 		team: "",
-		title: "mtgn2015",
+		title: "Mtgn&shy;2015",
 		tools: "",
 		url: ""
 	},

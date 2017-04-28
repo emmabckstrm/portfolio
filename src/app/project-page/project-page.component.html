@@ -1,10 +1,39 @@
+<div class="hero project-page">
+    <div class="row">
+      <div class="col-lg-6 big-left">
+          <h3 *ngIf="portfolioItem" [innerHTML]="portfolioItem.title"></h3>
+      </div>
+      <div class="col-lg-6 big-right">
+        <div class="content">
+          <img class="project-img" *ngIf="portfolioItem" [src]="portfolioItem.img"/>
+          <p class="subtitle">
+            <span class="label">Role //</span> <span *ngIf="portfolioItem">{{portfolioItem.role}}</span>
+          </p>
+          <p class="subtitle" *ngIf="portfolioItem">
+            <span *ngIf="portfolioItem.tools"><span class="label">Tools //</span> {{portfolioItem.tools}}</span>
+          </p>
+          <p class="subtitle" *ngIf="portfolioItem">
+            <span *ngIf="portfolioItem.team"><span class="label">Team //</span> {{portfolioItem.team}}</span>
+          </p>
+          <p class="subtitle" *ngIf="portfolioItem">
+            <span *ngIf="portfolioItem.url"><span class="label">Link //</span> {{portfolioItem.url}}</span>
+          </p>
+          <!-- project description -->
+          <div class="description" *ngIf="portfolioItem" [innerHTML]="portfolioItem.description">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--
 <section class="hero is-primary is-medium">
   <div class="hero-body">
     <div class="container">
       <!--<img *ngIf="portfolioItem" [src]="portfolioItem.img"/>
       <h1 class="title" *ngIf="portfolioItem">
         {{portfolioItem.title}}
-      </h1>-->
+      </h1>--
       <h1 class="title" *ngIf="portfolioItem">
         {{portfolioItem.title}}
       </h1>
@@ -41,4 +70,4 @@
       </ul>
 		</div>
 	</div>
-</div>
+</div>-->

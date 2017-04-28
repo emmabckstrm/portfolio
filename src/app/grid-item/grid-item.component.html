@@ -1,7 +1,7 @@
 <div class="portfolio-item">
 	<div class="portfolio-overlay">
 		<div class="overlay-content">
-			<a [routerLink]="['/project', item.id]"><h4 [innerText]="item.title" class="text-center"></h4>
+			<a [routerLink]="['/project', item.id]"><h4 [innerHTML]="item.title" class="text-center"></h4>
 			<p [innerText]="item.role"></p></a>
 		</div>
 	</div>

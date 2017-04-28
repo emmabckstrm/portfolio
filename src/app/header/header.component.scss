@@ -3,3 +3,15 @@
 .hero {
 	@include hero($green, $primary-bg-color);
 }
+.header-content {
+	text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+
+    p {
+    	text-align: left;
+    }
+}
+.portrait {
+}
