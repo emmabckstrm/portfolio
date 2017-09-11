@@ -1,0 +1,39 @@
+@import './src/utility';
+
+.hero {
+	@include hero($green, $primary-bg-color);
+}
+.portrait-big {
+	text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 70%;
+
+    p {
+    	text-align: left;
+    }
+}
+.portrait {
+    width: 100%;
+    max-width: 660px;
+}
+.portrait-circle {
+	overflow: hidden;
+	max-width: 400px;
+	max-height: 400px;
+    width: 80vw;
+    height: 80vw;
+    margin: 30px auto;
+}
+.portrait-circle img { 
+	width: 100%;
+ }
+
+ @media (max-width: 480px) {
+    .portrait-big {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }

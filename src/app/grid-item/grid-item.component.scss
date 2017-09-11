@@ -1,0 +1,80 @@
+@import "./src/utility";
+
+$transition: all 0.2s $easing;
+
+.portfolio-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 46.4%;
+	margin: 0 1.6% 30px;
+	transition: transform 0.2s $easing;
+
+	a, a:hover { color: #fff; }
+}
+.portfolio-item img {
+	display: block;
+	width: 100%;
+}
+.portfolio-item h4 {
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.portfolio-item p {
+	font-size: 0.85em;
+	text-transform: uppercase;
+}
+.portfolio-img { 
+	width: 100%; 
+	overflow:hidden;
+}
+.portfolio-img-content {
+	background-size: cover;
+	background-position: center center;
+	transition: $transition;
+}
+.portfolio-overlay {
+	position: absolute;
+	color: #fff;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	opacity: 0;
+	text-align: center;
+}
+.portfolio-overlay:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+.overlay-content {
+	display: inline-block;
+	vertical-align: middle;
+	width: 80%;
+	margin: 0px 10%;
+	transform: translateY(50px);
+	transition: $transition;
+}
+.portfolio-item:hover { transform: scale(1.05, 1.05); }
+.portfolio-item:hover .portfolio-overlay {
+	opacity: 1;
+	transition: $transition;
+}
+.portfolio-item:hover .portfolio-img-content {
+	background-color: rgba(104,163,148,1);
+	background-blend-mode: multiply;
+	transition: $transition;
+}
+.portfolio-item:hover .overlay-content {
+	transform: translateY(0px);
+	transition: $transition;
+}
+.portfolio-overlay, .portfolio-item:hover .portfolio-overlay {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+}

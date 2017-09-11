@@ -1,0 +1,55 @@
+
+/* full screen container */
+@mixin hero($color, $bg) {
+	position: relative;
+	min-width: 100%;
+	min-height: 100%;
+
+	.row { min-height: 100%; }
+
+	.big-left {
+		min-height: 280px;
+		@include big-halvsie-left($color, $bg);
+	}
+	
+	.big-right {
+		@include big-halvsie-right($bg);
+	}
+}
+
+/* half of the full screen continer */
+@mixin big-halvsie-left($color, $bg) {
+		background: $color;
+		color: #fff;
+		h3 {
+			font-family:'Brusher', cursive;
+			font-size: 8.5vw;
+			
+			-ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for webkit */
+     word-break: break-word;
+
+    -webkit-hyphens: none;
+       -moz-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
+		}
+}
+
+/* right half of full screen container */
+@mixin big-halvsie-right($bg) {
+	background: $bg;
+		
+	.content {
+		width: 100%;
+		padding: 0 3.5%;
+	    padding-left: 1.5%;
+	    padding-top: 30px;
+	}
+
+	img.project-img {
+		width: 100%;
+	}
+}

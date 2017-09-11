@@ -1,0 +1,8 @@
+
+<div class="portfolio">
+		<masonry [options]="masonryOptions" class="portfolio-items">
+			<div class="article-grid-sizer"></div>
+			<masonry-brick class="brick" *ngFor="let item of portfolioItems" [item]="item">{{item.title}}</masonry-brick>
+		</masonry>
+</div>
+

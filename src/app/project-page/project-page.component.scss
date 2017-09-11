@@ -1,0 +1,10 @@
+@import './src/utility';
+
+.hero {
+	@include hero($peach, #fff);
+}
+
+.label {
+	font-weight: bold;
+	color: $peach;
+}
